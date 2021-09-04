@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+
+		 
+
+            <!-- <link href="bootrap3/css/bootstrap.min.css" rel="stylesheet">    -->
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			    
+
+
+
+			<link href="bootrap3/css/bootstrap-select.min.css" rel="stylesheet"> 
+
+			<!--<script src="bootrap3/js/jquery.js"></script> -->   
+
+			<!-- <script src="jquery-ui/jquery-ui.css"></script>   -->
+
+	        <script src="jquery.js"></script> 
+
+	        <script src="jquery-ui/jquery-ui.js"></script>
+
+            <!-- <script src="scripts3.js"></script> -->
+
+	        <script src="bootrap3/js/bootstrap.min.js"></script>
+
+            <script src="bootrap3/js/bootstrap-hover-dropdown.min.js"></script>
+
+            <script src="bootrap3/js/bootstrap-select.min.js"></script>
+
+            
+            
+            <link rel="stylesheet" href="awe/css/font-awesome.min.css">
+
+	        
+
+			<link href= "estilo.css" rel="stylesheet">
+
+				
+                         
+                        <script> 
+
+							$(document).ready(function(){
+
+								$("#info").empty();
+
+								$("#info").hide();
+								$("#carrito").hide();
+
+								 $('li.factura').hide();
+
+								 //var carrito_compra = [];
+                                 
+								
+							})
+
+						</script>
+
+
+
+			<script src="ima.js"></script>
+
+
+
+			<!--PARA MOSTRAR MENSAJES DE ALERTAS DIFERENTES-->
+
+
+            <link rel="stylesheet" href="alerti/css/alertify.css" />
+ 
+			<link rel="stylesheet" href="alerti/css/themes/default.min.css" />
+				 
+			<script src="alerti/alertify.js"></script>
+
+
+            
+		</head>
+
+	<body>
+
+	  
+	  <div class="container">
+
+	  
+		<div id="cabecera" class="row cabe" >
+
+		   <img src="carrito/compra10.jpg" class="img-responsive imagencabeza" alt="titulo"/>
+
+		        <!--
+		 
+		   		  <div class="col-sm-12"> 
+
+
+
+		      		<b><font color="#191970"><h2 style="font-size:4vw;">V E N T A  &nbsp; &nbsp; &nbsp; &nbsp; D E &nbsp; &nbsp; &nbsp; &nbsp;P R O D U C T O S</h2></font></b>
+
+		   	
+		   		  </div>
+		   		-->
+		 
+			
+			   <div class="col-sm-1" id= "carrito"> 
+
+               
+			      <img src="carrito/carrito1.png" width="70px" height="70px"/>
+			   	
+			   </div>
+			  
+
+         <!--
+			   <p id= "carrito">
+			   	
+                  <img src="carrito/carrito1.png" width="5px" height="5px"/>
+
+			   </p>
+		-->	   
+
+			 
+			
+		</div>
+
+              
+
+		<div id="menua" class="row" >
+
+		   <div class="col-sm-3" id="menu">
+
+			<p class="menub">M E N U</p>
+
+                    <ul class="nav flex-column ">
+
+					  <li class="yo" class="nav-item">
+
+					    <a id = "carga" class="nav-link active" href="#"><i class="fa fa-fw fa-magic"></i> SUBIR PRODUCTO</a>
+
+					  </li>
+
+					  <li class="pagarXW" class="nav-item">
+
+					    <a id = "pagar" class="nav-link" href="#"><i class="fa fa-paypal"></i>&nbsp; &nbsp;Paypall(pagar)</a>
+
+					  </li>
+
+
+					                        
+                      <li class="dropdown-yo">
+
+						    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+						        <i class="fa fa-fw fa-magic"> </i> Categorias<b class="caret"></b>
+						    </a>
+
+						    <ul class="dropdown-menu" id="cate2">
+						        <li class="categor"><a href="#" value="ba"><p class="fa fa-fw fa-magic"></p>Ba&ntilde;o</a></li>
+						        <!--<li class="divider"></li>-->
+						        <li class="categor"><a href="#"><p class="fa fa-fw fa-asterisk"></p>Cocina</a></li>
+						        <!--<li class="divider"></li>-->
+						        <li class="categor"><a href="#"><p class="fa fa-fw fa-magic"></p>Lenceria</a></li>
+						        <!--<li class="divider"></li>-->
+						        <li class="categor"><a href="#"><p class="fa fa-fw fa-asterisk"></p>Ferreteria</a></li>
+						    </ul>
+
+						  
+					  </li> 
+
+				  
+					  
+					  <li class="yo" class="nav-item">
+					    <a class="nav-link" href="#" id="listadof"><i class="fa fa-fw fa-magic"></i> Listado</a>
+					  </li>
+
+					  <li class="yo factura" class="nav-item">
+					    <a class="nav-link" href="#"><i class="fa fa-fw fa-file-o"></i> GENERAR FACTURA</a>
+					  </li>
+          
+
+					</ul> 
+
+
+					
+		   </div>
+
+		   <!--<div class="col-sm-8" id = "info" style="margin-left: 12px">-->
+
+           <div class="col-sm-8 infox" id = "info2">
+		   </div>
+           
+		   <div class="col-sm-8 info" id = "info">
+
+		      
+
+				<p><b>I N F O R M A C I O N</b></p>
+
+				<div><img src="gif/mano.gif" alt="CARGANDO" width="50" height="50"/> </div>
+
+
+
+
+		   </div>
+			
+		</div>
+
+
+		
+		<div id="pie" class="row">
+
+		    <!--<div class="col-sm-3">
+					<p><font color="black">PIE PAGINA</font color></p>
+                </div>  
+			-->
+
+            <div class="col-sm-3 socia">		
+
+                    <a href="https://twitter.com/login?lang=es" target="_blank" class="btn btn-primary btn-lg btn-block btn-social btn-twitter soci">
+					    <span class="fa fa-twitter fa-1x soci"></span><font color="white"> Twitter</font>
+
+					    
+					</a>
+			</div>
+			
+			<div class="col-sm-3 socia">		     
+
+                    <a href="https://ve.linkedin.com/" target="_blank" class="btn btn-primary btn-lg btn-block btn-social btn-linkedin soci">
+					    <span class="fa fa-linkedin fa-1x soci"></span><font color="white"> linkedin </font>
+					</a>
+
+					
+			</div>
+			
+			<div class="col-sm-3 socia">		
+
+					<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="btn btn-primary btn-lg btn-block btn-social btn-instagram soci">
+					    <span class="fa fa-instagram fa-1x soci"></span><font color="white"> instagram </font>
+					</a>
+
+					
+			</div>		
+
+            <div class="col-sm-3 socia">
+
+                    <a href="https://es-la.facebook.com/" target="_blank" class="btn btn-primary btn-lg btn-block btn-social btn-facebook soci">
+					    <span class="fa fa-facebook fa-1x soci"></span><font color="white"> facebook </font>
+
+					    
+					</a>
+
+				
+
+		    </div>
+			
+		</div>
+
+      </div>
+
+	</body>
+
+	   <!--<script src="jquery.js"></script>-->
+
+       <script src="scripts.js"></script>
+       <!--<script src="constante.js"></script>-->
+
+</html>
