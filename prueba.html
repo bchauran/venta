@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+    <meta charset="UTF-8">
+    <title>bootstrap-select</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- Latest compiled and minified CSS -->
+    
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <link href="bootrap3/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- SELECT -->
+    <!-- Latest compiled and minified CSS -->
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">-->
+
+    <link href="bootrap3/css/bootstrap-select.min.css" rel="stylesheet"> 
+
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+
+    <script src="bootrap3/js/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="bootrap3/js/bootstrap.min.js"></script>
+
+    <script src="bootrap3/js/bootstrap-select.min.js"></script>
+
+
+    <script src="bootrap3/js/bootstrap-hover-dropdown.min.js"></script>
+
+    <link rel="stylesheet" href="awe/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading"><h1 class="text-center">Seleccion</h1></div>
+    <div class="panel-body">
+        <div class="row">&nbsp;</div><!-- row una fila en blanco para dar un espaciado arriba -->
+
+        <div class="container-fluid">
+            <form action="post.php" method="post">
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+
+                <div class="col-md-3 col-centered" id="capaOpciones">
+                    <label class="control-label " for="opciones">Estados:</label>
+                    <select id="opciones" name="opciones[]" class="selectpicker" data-style="btn-primary" multiple title="Sin estados"  data-header="Opciones:">
+                        <option  data-subtext="Todos los servicios" data-icon="glyphicon-asterisk" value="TODOS" class="opcionBold">TODOS</option>
+                        <option  data-subtext="Solo servicios pendientes" value="Pendiente" >Pendiente</option>
+                        <option  data-subtext="Solo servicios terminados"  value="Terminado" >Terminado</option>
+                        <option  data-subtext="Solo servicios realizados en la guardia" value="Guardia" >Guardia</option>
+                    </select>
+                </div>
+
+                <div class="row row-centered">
+                    <button type="submit" class="btn btn-primary" id="btn-buscar"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="row">&nbsp;</div><!-- row una fila en blanco para dar un espaciado arriba -->
+        <div class="row">&nbsp;</div><!-- row una fila en blanco para dar un espaciado arriba -->
+        <div class="panel-footer text-center text-primary">Prueba de bootstrap-select</div>
+    </div></div>
+</body>
+</html>
+
+	</head>
+
+
+	<body> 
+
+     
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">IMAGEN CON SELECT
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">
+        <img src="imagen/brito.png" width="17px" />Facebook</a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="imagen/02.jpg" width="17px" />Twitter</a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="imagen/03.jpg" width="17px" />List Image</a>
+    </li>
+  </ul>
+
+
+  <select class="selectpicker">
+		  <option data-icon="fa fa-fw fa-magic">Ketchup</option>
+		 </select>
+</div>
+
+
+
+<br><br>
+
+
+<select title="ELIJE ..." class="selectpicker">
+  <option>ELIGE...</option>
+  <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">OJOS DE MEDUZA</option>
+  <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">LLUVIA DE FUEGO</option>
+</select>
+
+
+<br><br>
+
+
+       
+   <div class="container-fluid">
+            <form action="post.php" method="post">
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+
+                <div class="col-md-3 col-centered" id="capaOpciones">
+
+	        
+                    <label class="control-label " for="opciones">Estados:</label>
+                    <select id="opciones" name="opciones[]" class="selectpicker" data-style="btn-primary" multiple title="Sin estados"  data-header="Opciones:">
+                        <option  data-subtext="Todos los servicios" data-icon="fa fa-fw fa-angellist" value="TODOS" class="opcionBold">TODOS</option>
+                        <option  data-subtext="Solo servicios pendientes" value="Pendiente" >Pendiente</option>
+                        <option  data-subtext="Solo servicios terminados"  value="Terminado" >Terminado</option>
+                        <option  data-subtext="Solo servicios realizados en la guardia" value="Guardia" >Guardia</option>
+                    </select>
+                </div>
+
+			</div>
+
+		</form>	
+   </div>			
+	   
+	         
+
+	</body>
+
+
+
+</html>

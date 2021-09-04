@@ -1,0 +1,460 @@
+
+/*______________________________________________*/
+
+
+RESETS CSS HOJAS DE ESTILO
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*_____________________________*/
+
+
+
+
+
+
+
+#cabecera{
+
+
+    /*
+	border-style: solid;
+
+	border-width: 1px;
+
+	*/
+
+	/*sombra*/
+      -moz-box-shadow: rgb(150,150,150) 5px 5px;
+	  -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+
+	 /*bordes redondeados*/
+      -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+    padding: 0px;	
+
+    margin-bottom: 12px;  
+
+
+    
+          
+}
+
+
+
+
+
+
+
+#menu{
+
+
+	border-style: solid;
+
+	border-width: 1px;
+
+	/*sombra*/
+          -moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+
+	 /*bordes redondeados*/
+          -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+    /*padding: 10px;*/	
+
+    margin-bottom: 12px;  
+
+
+    
+          
+}
+
+
+.menub{
+
+
+
+	padding-top:12px;
+	padding-left: 18px;
+	
+	font-size: 26px;
+
+	font-weight: bold;
+
+	font-family: italic;
+	 color: red;
+	
+}
+
+
+.card{
+
+
+	/*sombra*/
+          -moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+
+	 /*bordes redondeados*/
+          -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+    padding: 10px;	
+
+    margin-bottom: 12px;  
+
+    
+	/*border-right: solid 0.5px*/
+	border-style: solid;
+
+	border-width: 1px;
+
+}
+
+
+
+#menu1{
+
+
+	border-style: solid;
+
+	border-width: 10px;
+
+	/*sombra*/
+
+	-moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+
+	 /*bordes redondeados*/
+      -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+    padding: 10px;	
+
+    margin-bottom: 12px;  
+
+
+    
+          
+}
+
+
+
+
+
+
+#info{
+
+
+	border-style: solid;
+
+	border-width: 1px;
+
+	/*sombra*/
+
+    -moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+
+	 /*bordes redondeados*/
+      -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+    padding: 18px;	
+
+    margin-bottom: 12px;  
+
+
+    
+          
+}
+
+.imagencabeza{
+
+	/*bordes redondeados*/
+      -moz-border-radius: 20px / 10px;
+	  -webkit-border-radius: 20px / 10px;
+	  border-radius: 20px / 10px;
+
+
+
+}
+
+
+/*quito el punto negro de los li*/
+ul{
+     list-style:none; 
+}
+
+
+
+body{
+
+	font-size: 1.5em;
+}
+
+
+
+
+
+.dropdown-toggle:hover { font-size: 1.2em; background-color:white !important; }
+
+
+li.yo a:hover {
+
+	font-size: 1em;
+    
+    background:white; color:red !important; 
+
+
+}
+
+
+a {
+    
+    background:white; color:black !important; 
+
+
+}
+
+
+/*PARA USAR LAS FENTES QUE ESTAN INSTALADAS*/
+
+/*
+
+
+body {font-family:'Roboto_Slab', Arial, sans-serif;}
+h1,h2,h3,h4,h5,h6,p,a {font-family:'Caladea', Arial, sans-serif;}
+
+
+*/
+
+
+
+
+/*CAMBIO EL COLOR DEL ICONO DE FONT-AWESOME y le pongo relleno abajo*/
+
+.soci{
+
+	padding-bottom: 3px;
+
+	color : white;
+
+	background-color: #4682B4;
+
+}
+
+.socia{
+
+	padding-bottom: 3px;
+
+}
+
+
+.cabe{
+
+	font-family:'Caladea', Arial, sans-serif;
+
+
+}
+
+
+.cancelado{
+
+	font-family:'Caladea', Arial, sans-serif;
+
+
+}
+
+
+
+
+.alertify, .menu{
+
+	font-family:'Caladea', Arial, sans-serif;
+}
+
+
+
+
+/*botones comprar y cancelar*/
+
+.botonc{
+
+	margin-right: 1px;
+
+	margin-top: 8px;
+
+	margin-left:15px;
+
+}
+
+
+.botond{
+
+	margin-right: 1px;
+
+	margin-top: 8px;
+
+	margin-left:4px;
+
+}
+
+
+
+
+
+
+
+.cabe {
+
+    
+  margin-top: 3px;	
+
+  /* Ubicación de la imagen */
+
+ 	/*background-image: url(cabe2.png);*/
+
+ 	/*background-image: url(carrito/189.jpg);*/
+
+
+	/* Para dejar la imagen de fondo centrada, vertical y
+
+	horizontalmente */
+
+	/*background-position: center center;*/
+
+	/* Para que la imagen de fondo no se repita */
+
+	/* background-repeat: no-repeat;*/
+
+	/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+	/* background-attachment: fixed; */
+
+	/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+	/* background-size: cover;*/
+
+	/* Se muestra un color de fondo mientras se está cargando la imagen
+
+	de fondo o si hay problemas para cargarla */
+
+	/*background-color: red;*/
+
+ 
+}
+
+
+.responsive-iframe {
+  
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
+
+
+/*---NOTA
+
+ESTA REGLA SE EJECUTA CUANDO LA PANTALLA ESTA ENTRE 768 y 1900 DE ANCHO
+
+O SEA QUE SI LA PANTALLA MIDE MENOS DE 768 O MAYOR DE 1900 NO SE EJECUTA 
+
+ESTA REGLA.
+
+*/
+
+@media (min-width: 768px) and (max-width: 1900px) {
+
+	 .info {
+	 margin-left: 12px;
+
+	 }
+
+
+	 #carrito{
+
+		/*float: right;*/
+
+		position:absolute;
+		 top:300px;
+		 left:100px;
+		 border:none;
+	}
+
+
+	 
+	 
+ }
+
+
+ 
+
+
+
+
+

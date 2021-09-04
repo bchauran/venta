@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-ui/jquery-ui.css"></script>
+		<script src="jquery.js"></script>
+		<script src="jquery-ui/jquery-ui.js"></script>
+
+		<script type="text/javascript">
+
+
+			$(document).ready(function(){
+
+				/*
+
+				  $("#btn1").click(function(){
+
+				    $("div#dialogo").slideToggle("slow");
+
+				    
+
+				  });
+
+	            */   
+
+	               //$("div#dialogo").hide();
+
+
+                  $("div#dialogo").click(function(){
+
+                               $(this).hide("explode","slow").delay(500).show("scale","slow");
+
+                            }); 
+
+
+				   $("#btn1").click(function(){
+
+
+
+
+				    	    //$("div#dialogo").slideToggle("slow");
+
+				    		//$("div#dialogo").fadeTo(500,0).delay(1000);
+                            
+                            //$("div#dialogo").show(1000);
+
+                            $("div#dialogo").hide("slide","slow").delay(500).show("scale","slow");
+
+
+                            //$("div#dialogo").fadeIn(1000); 
+
+                            //$("div#dialogo").fadeOut(1000);
+                            
+                            //$("div#dialogo").fadeOut(1000, function(){
+								//$("div#dialogo").css({'top': 300, 'left':200});
+								//$("div#dialogo").fadeIn(1000);
+							//});
+
+
+                  			/*
+				    			$("div#dialogo").dialog({
+
+					                        show: {
+
+					                            effect: "explode",
+					                            duration: 500
+					                        },
+
+					                        hide: {
+
+					                            effect: "explode",
+					                            duration: 1500
+					                        } 
+					            });
+							*/
+				   });
+
+			});	  
+
+
+
+		</script>
+
+
+
+	</head>
+
+	<body>
+
+	  <center>
+
+	     <br><br>
+
+		  <div id="dialogo" style="background: yellow; width: 160px; height: 110px; ">
+		  	
+		  	<p>HOLA SALUDOS</p>
+
+		  	
+
+		  </div>
+
+		  <br><br>
+
+		  <button id="btn1">haz click</button>
+
+	 </center>
+
+
+	  
+
+	</body>
+
+</html>
