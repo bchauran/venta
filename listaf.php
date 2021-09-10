@@ -23,35 +23,46 @@
 			    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 			    <title>Verificar</title> -->
 
-			      <script src="tabla/js/jquery.js"></script>
+			      <script src="tabla/js/jquery.js"></script> 
 
 
+
+                   
+	           <!-- <script src="jquery.js"></script>   -->
+
+	            <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  -->
+
+
+	            
 
 
                   			
 
-			<!-- INICIO BOOSTRAP -->
+			  <link rel="stylesheet" type="text/css" href="datatable/css/jquery.dataTables.min.css"/>
 
-
-			    <link rel="stylesheet" href="bootrap3/boost/bootstrap.min.css">
-			    <link rel="stylesheet" href="bootrap3/boost/dataTables.bootstrap.min.css">
-
-			    <link rel="stylesheet" href="bootrap3/boost/buttons.bootstrap.min.css">
+			  <link rel="stylesheet" type="text/css" href="datatable/css/buttons.dataTables.min.css"/>
 
 
 
+			  <script src="datatable/js/jquery.dataTables.min.js"></script> 
 
-			<!--FIN BOOSTRAP-->   
+			  <script src="datatable/js/dataTables.buttons.min.js"></script>
 
-                
-                
-                
 
-				<script src="bootrap3/jsx/jquery.dataTables.min.js"></script>
 
-				<script src="bootrap3/jsx/dataTables.bootstrap.min.js"></script>
+			  <script src="datatable/js/jszip.min.js"></script>
 
-				
+			  <script src="datatable/js/pdfmake.min.js"></script>
+
+			  <script src="datatable/js/vfs_fonts.js"></script>
+
+			  <script src="datatable/js/buttons.html5.min.js"></script>
+
+
+
+			  <script src="datatable/js/buttons.print.min.js"></script>
+
+			              
 
 
 
@@ -75,66 +86,87 @@
 
                 <script>
 
-	               	/*$(document).ready(function () {
 
-
-	               		$('#mitabla').DataTable({"language": {"url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"},
-
-	               			"lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "TODOS"]],
-
-                              "dom": 'B<"float-left"i><"float-right"f>t<"float-left"l><"float-right"p><"clearfix">',
-
-			            buttons: [
-			                'copyHtml5',
-			                'excelHtml5',
-			                'csvHtml5',
-			                'pdfHtml5'
-			            ]
-
-                        
-	            		});
+                	  $(document).ready(function() {
+                	  	$('#mitabla').DataTable( {
 
 
 
-
-	               		$('.dataTables_length').addClass('bs-select');
-
-
-	               	 });
-                    */
-
-	               /*	$(document).ready(function() {*/
-
-	               		
-
-	               		/*$('#mitabla').DataTable();*/
-
-
-/*
-	               		var table = $('#mitabla').DataTable( {
-	               			lengthChange: false,
-	               			buttons: [ 'copy', 'excel', 'pdf', 'colvis' ]
-	               		} );
-
-	               		table.buttons().container()
-	               		.appendTo( '#mitabla_wrapper .col-sm-6:eq(0)' );
-*/
-
-
-						$(document).ready(function() {
-
-							$('#mitabla').dataTable( {
-								"language": {
+                              "language": {
 									"url": "bootrap3/Spanish.json"
 								},
 
-								
-
-							} );
-
-						} );
 
 
+
+
+                	  		dom: 'Bfrtip',
+
+                	  		/*buttons: [
+
+
+                	  		'copy', 'csv', 'excel', 'pdf', 'print'
+
+
+
+                	  		]*/
+
+
+                            
+
+                	  		 buttons: [{
+
+								        //Botón para Excel
+								        extend: 'excel',
+								        footer: true,
+								        title: 'BRITO_ECXEL',
+								        filename: 'BRITO_ECXEL',
+
+								        //Aquí es donde generas el botón personalizado
+								        text: '<button class="btn btn-success">Excel <i class="fas fa-file-excel"></i></button>'
+								      },
+
+								      //Botón para PDF
+								      {
+								        extend: 'pdf',
+								        footer: true,
+								        title: 'BRITO_PDF',
+								        filename: 'BRITO_PDF',
+								        text: '<button class="btn btn-danger">PDF <i class="far fa-file-pdf"></i></button>'
+								      },
+
+								      //Botón para csv
+								      {
+								        extend: 'csv',
+								        footer: true,
+								        title: 'BRITO_csv',
+								        filename: 'BRITO_csv',
+								        text: '<button class="btn btn-success">CSV <i class="far fa-file-pdf"></i></button>'
+								      },
+
+
+								      {
+								        extend: 'copy',
+								        footer: true,
+								        title: 'BRITO_COPIAR',
+								        filename: 'BRITO_COPIAR',
+								        text: '<button class="btn btn-danger">COPIAR<i class="far fa-file-pdf"></i></button>'
+								      }
+
+
+						     ]
+
+
+                             
+
+                           
+
+
+
+                	  	} );
+                	  } );
+
+					
 
 
 

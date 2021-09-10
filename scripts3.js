@@ -202,30 +202,16 @@
     
 
    //generar la factura
-    $("li.factura").click(function(evento1){
+    /*$("li.factura").click(function(evento1){
 
             evento1.preventDefault();
 
-            //alert("hola");
-
-           /*
-
-            var alert = alertify.alert("GENERANDO FACTURA..." + carrito_compra).set('label', 'Aceptar');        
-            alert.set({transition:'zoom'}); //slide, zoom, flipx, flipy, fade, pulse (default)
-            alert.set('modal', false);  //al pulsar fuera del dialog se cierra o no 
-           
-           */
-
-
-            //$("#info").empty();
-
-           //$( "#info" ).load( "factura.php" );
-           
+                     
            
             $.ajax({
 
                       type: "POST",
-                      url: "facturaW.php",
+                      url: "factura.php",
                       data: {'array_con_codigos': JSON.stringify(carrito_compra)},
 
                       success: function(datas){
@@ -242,8 +228,8 @@
                       }
             });
 
-    });  
-
+      });  
+*/
 
 
 

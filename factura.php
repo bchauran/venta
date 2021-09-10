@@ -34,13 +34,29 @@
 
         $contador3 = count($codigo_productos);
 
+        $hoy = date("H:i:s");
+
+
+        $conex2->query("insert into numerofactura (fecha) values ('$hoy')");
+
+
+        //Busco el ultimo registro
+
+        $ResultUltimo = $conex2->query("SELECT * FROM numerofactura order by NumFact desc limit 1");
 
         
+         $rowultimo= mysqli_fetch_array($ResultUltimo);
+
+
+         $NUNFAC = "FAC-".$rowultimo[0];  
+
+
+                 
 
 
         while ($contador < count($codigo_productos)) { 
 
-            $hoy = date("H:i:s");
+            //$hoy = date("H:i:s");
 
             $result = $conex2->query("SELECT categoria, nompro, codigo_p, precio FROM productos where codigo_p = '$codigo_productos[$contador]'");
 
@@ -70,7 +86,6 @@
             $contador2++; 
 
             
-
           
        
 
@@ -85,8 +100,7 @@
 
             $tot3=$tot1+$tot2;
 
-
-
+            
             $pdf->Cell(30,6,"",0,1,'C');
 
             $pdf->Cell(100,6);
@@ -119,7 +133,11 @@
 
             //$pdf->Output("facturas/factura.pdf"); 
 
-            $pdf->Output("facturas/".$hoy."factura.pdf"); 
+            /*$pdf->Output("facturas/".$hoy."factura.pdf"); */
+
+            $pdf->Output("facturas/".$NUNFAC.".pdf"); 
+
+            
 
             mysqli_close($conex2);
             
