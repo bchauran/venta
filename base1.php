@@ -223,6 +223,76 @@
 
 
 
+      //INGRESO LOS DATOS DEL CLIENTE EN LA BASE DE DE DATOS
+
+         function IngresoC($unoC, $dosC, $tresC, $cuatroC){
+
+
+            $myhost=$this->hostname;
+            $myusuario=$this->usuario;
+            $myclave=$this->clave;
+            $mybase=$this->basedatos;
+
+            
+            $datoC1=$unoC;
+            $datoC2=$dosC;
+            $datoC3=$tresC;
+            $datoC4=$cuatroC;
+            
+            $fecha=date("Y-m-d");
+
+
+            $abre = new mysqli($myhost, $myusuario, $myclave, $mybase);
+
+
+            //VERIFICO QUE EL CLIENTE NO EXISTA
+           
+
+            $BuscaC = $abre->query("SELECT  * FROM cliente where dnicli='$datoC1'");
+
+
+            $TOTAL_filas = mysqli_num_rows($BuscaC);
+           
+            
+            
+
+            if($TOTAL_filas == 0){
+
+                              
+               $ingreso=$abre->query("insert into cliente (dnicli,nombre,telefono,direccion,fecha) values ('$datoC1','$datoC2','$datoC3','$datoC4','$fecha')");
+
+               $exito="EXITO";
+
+               return $exito;  
+
+            }
+
+
+            else{
+
+               $existe="YA EXISTE";
+
+               return $existe; 
+
+               
+
+            }
+
+
+            mysqli_close($abre);
+            
+            
+
+      }
+
+
+
+
+     //FIN
+
+
+
+
 
 	  	function elimina($valor_a_eliminar){
 

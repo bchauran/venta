@@ -44,7 +44,7 @@ require_once('base1.php');
        	else{
 
 
-       		//Armo un array con los datos extraidos de la bd.
+       		
 
 	        $MISDATOS = array('id' => "",'nombre' => "",'telefono' => "",'direccion' => "");
 

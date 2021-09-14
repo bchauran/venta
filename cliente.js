@@ -39,13 +39,33 @@ $(function() {
                           var DatosC = JSON.parse(datoSC);
                        
 
-						  //console.log(DatosC.nombre);
+						  console.log(DatosC.nombre);
 
-                          $("#nom").val(DatosC.nombre);
+						  if (DatosC.nombre.length === 0){
 
-                          $("#telefono").val(DatosC.telefono);
 
-                          $("#direccion").val(DatosC.direccion);
+						  	 
+						  	  $("#nom").val(DatosC.nombre).prop( "disabled", false );
+						  	 
+	                          $("#telefono").val(DatosC.telefono).prop("disabled", false);
+
+	                          $("#direccion").val(DatosC.direccion).prop("disabled", false);
+
+						  	}
+
+						  else {	
+
+						  	 
+
+	                          $("#nom").val(DatosC.nombre).prop( "disabled", true );
+
+	                          //$( "#nom" ).prop( "disabled", true );
+
+	                          $("#telefono").val(DatosC.telefono).prop( "disabled", true );
+
+	                          $("#direccion").val(DatosC.direccion).prop( "disabled", true );
+
+                          }
 
 
                           

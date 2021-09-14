@@ -47,8 +47,9 @@
     });
 
 
+     
     
-    
+    //BOTON CARGAR PRODUCTOS
 
     $("#carga").click(function(evento){
 
@@ -75,6 +76,53 @@
                   $("#info").empty();
 
                  $("#info").load("listaf.php");
+
+
+
+    });
+
+
+
+    //BOTON GUARDA LOS DATOS DEL CLIENTE EN LA BASE DE DATOS
+    
+    $("#GuardaC").click(function(evento){
+
+       evento.preventDefault();
+
+       
+       var nomc = $("#nom").val();
+
+       var telef = $("#telefono").val();
+       
+       var direc = $("#direccion").val();
+
+       var idcli = $("#idcli").val();
+
+
+
+       $.ajax({
+
+               
+                      type: "POST",
+                      url: "GuardaC.php",
+                      data: {'idclie': JSON.stringify(idcli), 'nomclie': JSON.stringify(nomc), 'telefc': JSON.stringify(telef), 'direccionc': JSON.stringify(direc)},
+
+                       
+                      success: function(respuesta){
+
+                        // console.log(respuesta);    
+
+                        if (respuesta="EXITO"){
+
+                         var alert = alertify.alert("GRACIAS POR SU COMPRA...").set('label', 'Aceptar');        
+                          alert.set({transition:'zoom'}); //slide, zoom, flipx, flipy, fade, pulse (default)
+                          alert.set('modal', false);  //al pulsar fuera del dialog se cierra o no   
+
+                        }
+                        
+                         
+                      }
+            });
 
 
 

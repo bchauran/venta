@@ -71,6 +71,9 @@
 			<script src="ima.js"></script>
 
 
+			<script src="cliente.js"></script>
+
+
 
 			<!--PARA MOSTRAR MENSAJES DE ALERTAS DIFERENTES-->
 
@@ -149,6 +152,41 @@
 					    <a id = "pagar" class="nav-link" href="#"><i class="fa fa-paypal"></i>&nbsp; &nbsp;Paypall(pagar)</a>
 
 					  </li>
+
+					  <li class="pagar2XW" class="nav-item">
+
+					    <a id = "pagar2" class="nav-link" href="#"><i class="fa fa-money"></i>&nbsp; &nbsp;Pagar</a>
+
+					  </li>
+
+
+
+					  <li class="dropdown-paga">
+
+						    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+						        <i class="fa fa-money"> </i> Pagar<b class="caret"></b>
+						    </a>
+
+						    <ul class="dropdown-menu" id="catepaga">
+						         
+
+						    	<li class="pagarXW" class="nav-item">
+
+						    		<a id = "pagar" class="nav-link" href="#"><i class="fa fa-paypal"></i>&nbsp; &nbsp;Paypall(pagar)</a>
+
+						    	</li>
+
+						    	<li class="pagar2XW" class="nav-item">
+
+						    		<a id = "pagar2" class="nav-link" href="#cliente" data-toggle="modal"><i class="fa fa-money"></i>&nbsp; &nbsp;Pagar</a>
+
+						    	</li>
+
+
+						    </ul>
+
+						  
+					  </li> 
 
 
 					                        
@@ -260,6 +298,122 @@
 		</div>
 
       </div>
+
+
+
+
+
+         <!-- Modal / Ventana  -->
+		<div id="cliente" class="modal fade">
+		    <div class="modal-dialog">
+		        <div class="modal-content text-center">
+
+			            <div class="modal-header">
+				                
+				                
+				             <h2><b>INGRESE DATOS DEL CLIENTE</b></h2>
+
+			            </div>
+
+			            <div class="modal-body">
+
+							<!-- <h1>CUERPO MODAL</h1> -->
+
+                                            
+								<form class="needs-validation" novalidate>
+
+									<div class="form-row">
+										<div class="col-md-4 mb-3">
+											<label for="validationCustom01">ID CLIENTE</label>
+											<input type="text" class="form-control" id="idcli" placeholder="ID CLIENTE"  required>
+
+										</div>
+										<div class="col-md-4 mb-3">
+											<label for="validationCustom02">Nombre</label>
+											<input type="text" class="form-control" id="nom" placeholder="Nombre"  required>
+
+										</div>
+										<div class="col-md-4 mb-3">
+											<label for="validationCustomUsername">Direccion</label>
+											<div class="input-group">
+
+												<input type="text" class="form-control" id="direccion" placeholder="direccion" aria-describedby="inputGroupPrepend" required>
+
+											</div>
+										</div>
+									</div>
+
+									<br><br><br><br><br><br>
+
+									<div class="form-row">
+
+										<div class="col-md-6 mb-3">
+
+											<label for="validationCustom03">Telefono</label>
+											<input type="text" class="form-control" id="telefono" placeholder="Telefono" required>
+											
+										</div>
+
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom04">Otros</label>
+											<input type="text" class="form-control" id="validationCustom04" placeholder="Otros" required>
+
+										</div>
+
+
+
+									</div>
+                                    
+
+									<!-- <div class="hola" id="hola">
+
+
+
+									</div> -->
+
+
+
+								</form>
+
+						</div>
+
+                        <br><br><br><br><br><br>
+
+						<div class="modal-footer form-row">
+
+                              <center>
+                                <div class="col-md-12 mb-12">
+
+									<button type="button" id="btnCerrar" class="btn btn-danger btn-lg" data-dismiss="modal">
+										CERRAR
+									</button>
+
+
+									<button type="submit" id="GuardaC" class="btn btn-primary btn-lg">
+
+									    ACEPTAR
+
+									</button>
+
+								</div>
+							  </center>		
+									                
+									
+						</div>
+
+						
+
+						        
+			   </div>
+		    </div>
+		</div>
+
+         <!--FIN MODAL-->
+
+
+
+
+
 
 	</body>
 
